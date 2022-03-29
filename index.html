@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <video class="video"  id="video" autoplay loop muted>
+    
+    </video>
+    <div class="player">
+        <div class="player-details">
+            <h2 id="song-title" class="song-title"></h2>
+            <h3 id="song-artist" class="song-artist"></h3>
+        </div>
+        <div class="playercontrols">
+            <div id="prev_btn" class="previous"><img src="./assets/img/back.png" alt=""> </div>
+            <div id="play_btn" class="play_btn"><img src="./assets/img/play-button.png" alt=""></div>
+            <div id="pause_btn" class="pause_btn"><img src="./assets/img/video-pause-button.png" alt=""></div>
+            <div id="next_btn" class="next"> <img src="./assets/img/next.png" alt=""></div>
+            <div id="slide" class="hp_slide">
+                <div id="progressed" class="hp_range"></div>
+           </div>
+           
+        </div>
+        <div id="volumBar" class="volumBar">
+            <div id="volumProgress" class="volumProgress"></div>
+        </div>
+        <audio id="music-player" autoplay loop> <source src="./assets/music/yourName-Sparkle.mp3"></audio>
+    </div>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script src="./main.js"></script>
+</html>

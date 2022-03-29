@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.playercontrols {
+    display: flex;
+    align-items: center;
+}
+
+.player {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.player-details{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.song-title {
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.song-artist {
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.pause_btn {
+    display: block;
+}
+
+.play_btn {
+    display: block;
+}
+
+.hp_slide{
+    width:100%;
+    background:transparent;
+    height:10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.hp_range{
+    width:0;
+    background:white;
+    height:10px;
+    border-radius: 10px;
+
+}
+
+
+.volumBar{
+    max-width: 100px;
+    width:100%;
+    background:transparent;
+    height:10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.volumProgress{
+    background:white;
+    height:10px;
+    border-radius: 10px;
+}
