@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,26 @@
 body{
     margin: 0;
     padding: 0;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 100px;
+    top: 50px;
+}
+
+.title--title {
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+}
+
+.title--logo{
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 10px;
 }
 
 .video {
