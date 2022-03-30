@@ -21,6 +21,7 @@ window.onload = () => {
 
     const volumBar = document.getElementById('volumBar');
     const volumProgress = document.getElementById('volumProgress');
+    const volumLogo = document.getElementById('volumLogo');
 
     let current_song_i;
     let current_video;
@@ -91,6 +92,14 @@ window.onload = () => {
         volumProgress.style.width =((clickedPosition / event.target.offsetWidth) * 100) + "%";
     }, false)
     slide.addEventListener('click', UpdateProgressBar);
+    volumLogo.addEventListener('click', () => {
+        if(volumBar.style.display === 'none') {
+            volumBar.style.display = 'block';
+            
+        } else {
+            volumBar.style.display = 'none'
+        }
+    })
 
     pause_btn.style = 'display:none'
 
@@ -120,6 +129,7 @@ window.onload = () => {
     //    current_video = getRandomInt(0,videoArray.length);
         UpdateVideo();
     }
+
 
     function getRandomInt(min, max) {
         min = Math.ceil(min);

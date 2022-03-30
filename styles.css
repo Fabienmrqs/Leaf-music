@@ -95,7 +95,6 @@ img {
 
 }
 
-
 .volumBar{
     max-width: 100px;
     width:100%;
@@ -103,10 +102,25 @@ img {
     height:10px;
     border-radius: 10px;
     border: 1px solid white;
+    display: none;
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 110px;
 }
+
+.volumLogo {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+}
+
+
 .volumProgress{
     background:white;
     height:10px;
     border-radius: 10px;
 }
 
+.volum--logo:hover {
+    height: 30px;
+}
