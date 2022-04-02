@@ -15,9 +15,7 @@ window.onload = () => {
 
     const video = document.getElementById('video');
 
-    const volume = document.getElementById('volume');
     const slide = document.getElementById('slide');
-    const progressed = document.getElementById('progressed')
 
     const volumBar = document.getElementById('volumBar');
     const volumProgress = document.getElementById('volumProgress');
