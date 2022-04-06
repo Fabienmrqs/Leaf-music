@@ -21,6 +21,8 @@ window.onload = () => {
     const volumProgress = document.getElementById('volumProgress');
     const volumLogo = document.getElementById('volumLogo');
 
+    const trackTime = document.getElementById('tracktime');
+
     let current_song_i;
     let current_video;
 
@@ -96,7 +98,10 @@ window.onload = () => {
 
     pause_btn.style = 'display:none'
 
-  
+    audio_player.addEventListener('timeupdate', () => {
+        trackTime.innerHTML = Math.floor(audio_player.currentTime) + ' : ' + Math.floor(audio_player.duration);
+        console.log('ontimeupdate')
+    });
 
     initVideo();
     initPlayer();   
