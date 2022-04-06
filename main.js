@@ -78,11 +78,6 @@ window.onload = () => {
     pause_btn.addEventListener('click', TogglePlay);
     next_btn.addEventListener('click', () => ChangeSong());
     prev_btn.addEventListener('click', () => ChangeSong(false));
-    audio_player.addEventListener('ended', () => {
-        console.log('end');
-        current_song_i++
-        UpdatePlayer();
-    });
     audio_player.addEventListener('timeupdate', ProgressBar);
     volumBar.addEventListener('mousedown', (event) =>  {
         const clickedPosition = event.offsetX - event.target.offsetLeft;
@@ -187,10 +182,5 @@ window.onload = () => {
         UpdatePlayer();
         TogglePlay();
     }
-}
-
-audio_player.onended = (event) => {
-    console.log(event);
-    console.log('end');
 }
 
