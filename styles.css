@@ -124,7 +124,12 @@ img {
     border-radius: 10px;
 }
 
-.tracktime {
+.trackTimeContainer {
+    display: flex;
     color: white;
+}
+
+.tracktime {
+    margin-right: 10px;
 }
 
