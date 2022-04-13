@@ -48,6 +48,7 @@ img {
 .playercontrols {
     display: flex;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .player {
