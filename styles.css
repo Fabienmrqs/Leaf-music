@@ -38,6 +38,7 @@ body{
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 img {
@@ -49,6 +50,10 @@ img {
     display: flex;
     align-items: center;
     padding-bottom: 15px;
+}
+
+.controlscontainer {
+    display: flex;
 }
 
 .player {
@@ -137,3 +142,36 @@ img {
 .durationTime {
     margin-left: 10px;
 }
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        position: absolute;
+        top: 10%; left: 50%; 
+        transform: translate(-50%, -50%); 
+      }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .player {
+        position: absolute;
+        left: 100px;
+        top: 45%;
+    }
+    
+  }
